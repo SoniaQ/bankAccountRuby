@@ -1,8 +1,9 @@
 class BankAccount
-  attr_reader :balance
+  attr_reader :balance, :user
 
-  def initialize(money=0)
+  def initialize(money=0, user="Bluebyrdd")
     @balance = money
+    @user = user
   end
 
   def deposit(money)
