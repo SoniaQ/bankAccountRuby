@@ -17,4 +17,9 @@ describe BankAccount do
     expect{ bank.deposit(5) }.to change{ bank.balance }.by 5
   end
 
+  it 'can withdraw money from bank account' do
+    bank = BankAccount.new(10)
+    expect{ bank.withdraw(5) }.to change{ bank.balance }.by -5
+  end
+
 end
