@@ -16,6 +16,9 @@ As a bank manager
 I would like to be able to open a bank account with an initial balance
 
 As a bank manager
+I would like to assign a bank account to a specific user
+
+As a bank manager
 I would like to be able to withdraw money from my bank account
 
 As a bank manager

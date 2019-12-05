@@ -7,6 +7,11 @@ describe BankAccount do
     expect(bank.balance).to eq 10
   end
 
+  it 'can be assigned to a specified user on opening' do
+    bank = BankAccount.new("BlueByrdd")
+    expect(bank.user).to eq "Bluebyrdd"
+  end
+
   it 'can deposit money in the bank account' do
     bank = BankAccount.new
     expect{ bank.deposit(5) }.to change{ bank.balance }.by 5
