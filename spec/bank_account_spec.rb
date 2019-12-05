@@ -1,4 +1,5 @@
 require 'bankaccount'
+
 describe BankAccount do
 
   it 'can deposit money in the bank account' do
@@ -6,6 +7,5 @@ describe BankAccount do
     bank.deposit(5)
     expect(bank.balance).to eq 5
   end
-
 
 end
