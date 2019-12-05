@@ -22,4 +22,9 @@ describe BankAccount do
     expect{ bank.withdraw(5) }.to change{ bank.balance }.by -5
   end
 
+  it 'should raise an error when balance falls below zero' do
+    bank = BankAccount.new
+    expect{ bank.withdraw 1 }.to raise_error "Insufficient funds!"
+  end
+
 end
